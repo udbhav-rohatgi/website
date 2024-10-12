@@ -220,6 +220,71 @@ html { font-size: 16px; }
 
 
 /*-------------------------------------------------------------------*/
+/* Education Section */
+/* ################################################################# */
+
+.education-bg {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                    url("../../assets/images/education_section_bg.jpg");
+  background-attachment: fixed; 
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; 
+  color: #fff;
+  z-index: -2;
+}
+
+.education{
+    z-index: 1;
+}
+
+.education .heading{
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.education .heading p{
+    color: #75DAB4;
+    font-weight: 300;
+    font-size: 1.063rem;
+    text-transform: uppercase;
+    letter-spacing: 14px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.education .heading p span{
+    font-size: 9rem;
+    position: absolute;
+    left: 20%;
+    top: -3.125rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 0 3px #000000;
+    opacity: 0.15;
+    z-index: -1;
+}
+.education .heading h2{
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.education .content{
+    text-align: left;
+    margin-top: 3rem;
+}
+.education .content p{
+    font-size: 1.175rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 2rem;
+    padding: 1rem 0rem 0rem;
+}
+
+/* *************************************************************** */
+
+/*-------------------------------------------------------------------*/
 /* Skills Section */
 /* ################################################################# */
 .skill{
@@ -467,7 +532,7 @@ html { font-size: 12px; }
 
 @media (max-width: 568px) {
     html { font-size: 12px; }
-    .curriculum .heading p, .limited .heading p, .project .heading p {
+    .curriculum .heading p, .limited .heading p, .project .heading p, .education .heading p {
         display: none;
     }
 }
