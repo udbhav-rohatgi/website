@@ -1,129 +1,178 @@
-body{
-    font-family: 'Poppins', sans-serif;
+:root {
+    --primary-color: #75DAB4;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #75DAB4;
+    --shadow-color: rgba(100, 100, 111, 0.2);
+    --heading-color: #333;
+    --footer-bg-color: #13161d;
+    --footer-text-color: #999999;
+    --link-hover-color: #217fff;
+
+    --background-color-invert: #000;
+    --text-color-invert: #fff;
+    --hero-section-text: #5d5d5d;
+    --skill-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
 }
 
-html { font-size: 16px; }
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #f5f5f5;
+    --border-color: #64a98f;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+    --heading-color: #f5f5f5;
+    --footer-bg-color: #0a0a0a;
+    --footer-text-color: #666666;
 
+    --background-color-invert: #fff;
+    --text-color-invert: #000;
+    --hero-section-text: #fff;
+    --skill-box-shadow: rgb(255 255 255 / 52%) 0px 7px 29px 0px;
+}
 
-.udys-btn{
+/* Apply the theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+    font-size: 16px;
+}
+
+.udys-btn {
     border: none;
     text-transform: uppercase;
-    background-color: #75DAB4;
+    background-color: var(--primary-color);
     font-size: 1.125rem;
     font-weight: 500;
     padding: 15px 35px;
     border-radius: 4px;
     text-decoration: none;
-    color: #333;
+    color: var(--heading-color);
 }
 
+/* Navbar */
 .navbar li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 5px 2rem;
-
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px 2rem;
 }
 
 .navbar li > a {
-  color: #333;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
+    color: var(--heading-color);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
 }
 
 .navbar li > a::after {
-  content: "";
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0;
-  top: 5px;
-  background: transparent;
-  transition: all 0.3s;
-  
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
 }
 
 .navbar li > a:hover::after, li > a.active::after {
-  width: 100%;
-  background: #58c2b3;
+    width: 100%;
+    background: var(--primary-color);
 }
 
+.navbar .portfolio-theme-btn{
+    border: none;
+  background-color: var(--background-color-invert);
+    color: var(--text-color-invert);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* Media Queries */
 @media (min-width: 0) {
-      .navbar-expand {
+    .navbar-expand {
         flex-wrap: nowrap;
-      }
-      .navbar-nav {
-        flex-direction: row;
-      }
-      .nav-item {
-        margin-right: 15px;
-      }
     }
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-item {
+        margin-right: 15px;
+    }
+}
 
-
-.first-section{
+/* First Section */
+.first-section {
     padding: 2rem 0rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    align-content: space-around;
     margin-bottom: 1rem;
-    flex-direction: row;
 }
 
-.first-section img{
+.first-section img {
     max-width: 23rem;
+    border: 4px solid var(--border-color);
+    border-radius: 20px;
 }
 
-.first-section .bullseye i{
-    color: #75DAB4;
+.first-section .bullseye i {
+    color: var(--primary-color);
     font-size: 1.5rem;
 }
-.first-section .bullseye p{
+
+.first-section .bullseye p {
     font-size: 1.5rem;
-    margin: 0;   
+    margin: 0;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
-.first-section h1{
+
+.first-section h1 {
     font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     margin: 1rem 0rem;
     letter-spacing: 3px;
 }
-.first-section h1 span{
-    background-color: #75DAB4a1;
 
+.first-section h1 span {
+    background-color: rgba(117, 218, 180, 0.63);
 }
-.first-section p{
+
+.first-section p {
     font-size: 1.175rem;
     font-weight: 500;
     text-align: justify;
     word-spacing: 5px;
-    color: #5d5d5d;
-}
-.first-section img{
-    border: 4px solid #75DAB4;
-    border-radius: 20px;
+    color: var(--hero-section-text);
 }
 
-.first-section .icons{
-    font-size: 1.5rem;    
+.first-section .icons {
+    font-size: 1.5rem;
 }
 
-.first-section .icons a{
+.first-section .icons a {
     text-decoration: none;
-    color: #2d3b35;
-}
-.first-section .icons a:hover{
-    color: #64a98f;
+    color: var(--heading-color);
 }
 
-.first-section .icons i{
+.first-section .icons a:hover {
+    color: var(--border-color);
+}
+
+.first-section .icons i {
     padding: 0rem 5px;
 }
+
 
 /* limited section */
 /* *************************************************************** */
@@ -165,7 +214,7 @@ html { font-size: 16px; }
 }
 .limited .content p{
     ont-size: 1rem;
-    color: #000;
+    color: var(--text-color);
     line-height: 3.5rem;
 }
 /* *************************************************************** */
@@ -213,7 +262,7 @@ html { font-size: 16px; }
 }
 .project .content p{
     ont-size: 1rem;
-    color: #000;
+    color: var(--text-color);
     line-height: 1.5rem;
     padding: 2rem 0rem 1rem;
 }
@@ -306,7 +355,8 @@ html { font-size: 16px; }
 }
 .skill .subSkill .box {
     padding: 2rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    box-shadow: var(--skill-box-shadow);
     border-radius: 15px;
 }
 .skill .fimiliar{
@@ -314,7 +364,8 @@ html { font-size: 16px; }
 }
 .skill .fimiliar .box {
     padding: 0.5rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: var(--skill-box-shadow);
+    background-color: white;
     border-radius: 15px;
 }
 .skill .fimiliar .myPadding {
@@ -415,7 +466,7 @@ html { font-size: 16px; }
     font-size: 1.125rem;
     text-align: justify;
     word-spacing: 5px;
-    color: #5d5d5d;
+    color: var(--text-color);
 }
 
 
