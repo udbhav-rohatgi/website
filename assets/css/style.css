@@ -84,6 +84,14 @@ html {
     background: var(--primary-color);
 }
 
+.navbar .dropdown-toggle::after {
+     border-top: none; 
+     border-right: none; 
+     border-bottom: 0; 
+     border-left: none; 
+    background: var(--primary-color);
+}
+
 .navbar .portfolio-theme-btn{
     border: none;
   background-color: var(--background-color-invert);
@@ -612,11 +620,12 @@ html {
 }
 
 .books .book-box{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: var(--skill-box-shadow);
     padding: 1.25rem;
     border-radius: 1rem;
     min-height: 34rem;
     max-width: 18rem;
+    background-color: #fff;
 }
 
 .books .book-box .image{
