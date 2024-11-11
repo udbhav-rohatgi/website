@@ -638,6 +638,7 @@ html {
 .books .book-box .image img{
     border-radius: 1rem;
     max-height: 20rem;
+    border: 2px dashed #2d2d2d;
 }
 
 .books .book-box .title{
