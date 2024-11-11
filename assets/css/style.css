@@ -626,6 +626,7 @@ html {
     min-height: 34rem;
     max-width: 18rem;
     background-color: #fff;
+    margin-bottom: 2rem;
 }
 
 .books .book-box .image{
