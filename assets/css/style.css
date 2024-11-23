@@ -401,14 +401,19 @@ html {
 
 .education-bg {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+  margin: 5rem 0rem;
+  display: flex;
+  align-items: center;
+justify-content: center;
+align-content: center;
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                     url("../../assets/images/education_section_bg.jpg");
   background-attachment: fixed; 
   background-size: cover;
   background-position: center;
   padding: 100px 0; 
   color: #fff;
-  z-index: -2;
+  z-index: -2;*/
 }
 
 .education{
@@ -605,6 +610,7 @@ html {
     border-radius: 1.5rem;
     padding: 2rem 2rem;
     text-align: left;
+    border: 2px dashed #ffd700;
 }
 
 .curriculum  .curriculum-box h6{
@@ -632,14 +638,13 @@ html {
 
 }
 .curriculum  .curriculum-box.two{
-    background-color: #FFD700;
     margin-top: 3rem;
 }
 .curriculum  .curriculum-box.two i{
-    color: #0c0f16;
+
 }
 .curriculum  .curriculum-box.two p{
-    color: #0c0f16;
+
 }
 .curriculum  .curriculum-box.three{
     margin-top: 6rem;
