@@ -162,7 +162,11 @@ html {
     text-align: center;
 }
 
-.sub-hero .box p{
+.sub-hero .box a{
+    text-decoration: none;
+}
+
+.sub-hero .box a p{
     margin: 2px 0px 0px;
     text-transform: uppercase;
     color: #FFD700;
@@ -177,12 +181,24 @@ html {
     border-radius: 1rem;
 }
 
+.sub-hero .box a:hover .image{
+    border: 2px groove #ffd700;
+    padding: 0.9rem;
+}
+
+.sub-hero .box a.active .image{
+    border: 2px dashed #ffd700;
+    padding: 0.8rem;
+}
+.sub-hero .box a:hover p, .sub-hero .box a.active p{
+    font-weight: 400;
+}
 
 
 /* about section */
 /* *************************************************************** */
 .about{
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,6 +226,79 @@ html {
     font-weight: 300;
     font-size: 1.25rem;
 }
+
+/* intrests section */
+/* *************************************************************** */
+.intrests{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.intrests .image{
+    width: 75px;
+}
+
+.intrests h2{
+/*    font-family: 'Barlow Condensed', sans-serif;   */
+    font-family: "Cinzel", serif;
+    color: #ffd700; 
+    font-weight: 300;
+}
+
+.intrests p{
+    font-family: "Times New Roman", Times, serif;
+    word-spacing: 2px;
+    text-align: left;
+}
+
+.intrests p.cursive{
+    text-align: center;
+    font-family: "Rochester", cursive;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+
+/* future section */
+/* *************************************************************** */
+.future{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.future .image{
+    width: 75px;
+}
+
+.future h2{
+/*    font-family: 'Barlow Condensed', sans-serif;   */
+    font-family: "Cinzel", serif;
+    color: #ffd700; 
+    font-weight: 300;
+}
+
+.future p{
+    font-family: "Times New Roman", Times, serif;
+    word-spacing: 2px;
+}
+
+.future p.cursive{
+    font-family: "Rochester", cursive;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
 
 
 /* limited section */
